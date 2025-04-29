@@ -1,0 +1,11 @@
+<b:loop values='data:post.labels' var='label'>
+  <!-- Cek jika nama label mengandung '$' -->
+  <b:if cond='data:label.name contains "$"'>
+    <a class='harga-link' expr:href='data:label.url'><data:label.name/></a>
+  </b:if>
+
+  <!-- Cek jika nama label mengandung 'Rp' -->
+  <b:if cond='data:label.name contains "Rp"'>
+    <a class='harga-link' expr:href='data:label.url'><data:label.name/></a>
+  </b:if>
+</b:loop>
