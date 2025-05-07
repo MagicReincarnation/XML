@@ -1,0 +1,12 @@
+<b:loop index='i' values='data:post.labels' var='label'>
+	<b:if cond='data:label.name in data:Format'>
+		<a class='link-text-accent' expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
+			<data:label.name />
+		</a>
+	</b:if>
+</b:loop>
+<strong>
+	<data:post.title />
+</strong> in complete and latest version at <strong>
+	<data:blog.title />
+</strong>. We offer Comics, Manhua, Manhwa, and Novels for free online reading.
